@@ -3,588 +3,119 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Engaging Identity | A Practice Series</title>
-  <meta name="description" content="Engaging Identity: a four-week practice series for community groups and individual reflection.">
+  <title>Practice Series Catalog | York Alliance</title>
+  <meta name="description" content="Practice Series catalog for York Alliance spiritual formation roadmap.">
   <style>
-    :root{--ink:#1f211d;--muted:#68635a;--paper:#f7f2e9;--card:#fffaf1;--line:#ded3c2;--gold:#a96f2a;--blue:#1f829f;--red:#a3212d;--green:#847626;--shadow:0 20px 50px rgba(31,33,29,.12);--max:1240px;}
+    :root{--ink:#1f211d;--muted:#6b6253;--paper:#f8f2e7;--line:#dccdb7;--card:#fffaf1;--gold:#a96f2a;--accent:#1f6f8f;--shadow:0 20px 45px rgba(31,33,29,.12);--max:1180px}
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fbf8f1,var(--paper));line-height:1.65;font-size:18px}
-    a{color:#12657d;text-decoration-thickness:.08em;text-underline-offset:.18em}
-    .wrap{width:min(var(--max),calc(100% - 32px));margin-inline:auto}
-    .hero{padding:44px 0 28px}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,360px);gap:42px;align-items:center}
-    .eyebrow{letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700;font-size:.78rem}
-    .hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3rem,8vw,6rem);line-height:.86;margin:.18em 0 .08em;font-weight:500;letter-spacing:-.055em}
-    .subtitle{font-size:clamp(1.1rem,2vw,1.35rem);color:var(--muted);max-width:650px}
-    .cover-frame{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#ece5d8;min-height:220px}
-    .cover{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;background:#ddd}
-    .cover-frame.no-image .cover{display:none}
-    .cover-frame.no-image::before{content:"Add your booklet cover as booklet-cover.jpg in this folder.";display:flex;align-items:center;justify-content:center;min-height:220px;padding:20px;text-align:center;font-weight:700;color:#6a5f50}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-    .button{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);text-decoration:none;font-weight:700}
-    .button.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
-    .layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;align-items:start;padding-bottom:18px}
-    .quick-tools{position:sticky;top:8px;z-index:6;display:flex;flex-wrap:wrap;background:rgba(247,242,233,.96);border:1px solid var(--line);border-radius:12px;padding:10px;gap:8px;align-items:center}
-    .quick-tools label{font-size:.86rem;font-weight:700;color:#5b5346}
-    .quick-tools select{flex:1;min-width:180px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit}
-    .quick-tools button{padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;font:inherit;font-weight:700}
-    .reader-fallback{width:100%;font-size:.92rem;color:#5b5346}
-    .reader-fallback a{margin-right:8px}
-    .toc-shell{position:sticky;top:14px;z-index:4}
-    .toc{background:rgba(247,242,233,.94);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;padding:14px}
-    .toc h2{font-size:1rem;font-family:ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:2px 0 10px}
-    .toc a{display:block;text-decoration:none;color:var(--ink);font-size:.93rem;padding:7px 10px;border-radius:10px}
-    .toc a:hover,.toc a:focus-visible{background:#fff}
-    .section{padding:22px 0;border-bottom:1px solid var(--line)}
-    .card{background:rgba(255,250,241,.78);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,4vw,42px);box-shadow:0 10px 30px rgba(31,33,29,.06)}
-    h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,4.5vw,3.5rem);line-height:1;margin:0 0 22px;letter-spacing:-.035em}
-    h3{font-size:1.25rem;margin:34px 0 10px}
-    blockquote{margin:0 0 28px;padding:22px 24px;border-left:5px solid var(--gold);background:#fff;border-radius:0 16px 16px 0;color:#332f28;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem}
-    .quote-by{display:block;margin-top:10px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:.95rem;color:var(--muted);font-style:normal}
-    ul,ol{padding-left:1.35rem}
-    li{margin:.4rem 0}
-    .questions li{margin-bottom:.75rem}
-    .process{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
-    .process span{background:#fff;border:1px solid var(--line);padding:9px 12px;border-radius:12px;font-weight:700;color:#4d483f}
-    .week-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 16px}
-    .complete-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:#fff;border:1px solid var(--line);border-radius:999px;font-size:.95rem}
-    .week-complete{accent-color:#2f7d32}
-    .print-week{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;font:inherit}
-    .is-complete h2{color:#2f7d32}
-    .scripture-details{margin:14px 0 18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 12px}
-    .scripture-details summary{cursor:pointer;font-weight:700;padding:10px 0;list-style:none}
-    .scripture-details summary::-webkit-details-marker{display:none}
-    .scripture-details .scripture-preview{margin:0 0 10px;color:#4a4339}
-    .scripture-link{display:inline-block;margin-bottom:14px;font-size:.92rem}
-    .section-nav{display:flex;justify-content:flex-end;margin-top:24px}
-    .footer{padding:34px 0 60px;color:var(--muted);font-size:.95rem}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(1200px 650px at 8% -12%,#fff7ea,transparent),linear-gradient(180deg,#fbf8f1,var(--paper));color:var(--ink);line-height:1.6}
+    .wrap{width:min(var(--max),calc(100% - 34px));margin-inline:auto}
+    .hero{padding:40px 0 26px}
+    .eyebrow{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:800}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.4rem,6vw,4.8rem);line-height:.9;margin:.2em 0 .15em;letter-spacing:-.04em}
+    .sub{font-size:clamp(1.05rem,2vw,1.2rem);color:var(--muted);max-width:760px}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);text-decoration:none;font-weight:700}
+    .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+
+    .roadmap{padding:8px 0 10px}
+    .roadmap-bar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .step{padding:10px 12px;background:rgba(255,250,241,.76);border:1px solid var(--line);border-radius:12px;font-size:.9rem;color:#4f4639;font-weight:700}
+    .step.active{background:#fff;border-color:#bfa276;color:#6e4a1e}
+
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:18px 0 48px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .card-media{background:#efe2cc;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center}
+    .card-media img{width:100%;height:100%;object-fit:cover}
+    .placeholder{padding:20px;text-align:center;color:#7a6e5d;font-weight:700}
+    .card-body{padding:16px 16px 18px}
+    .pill{display:inline-block;padding:4px 9px;border:1px solid #d7c5ad;border-radius:999px;background:#fff;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#7b674d;font-weight:800}
+    h2{font-family:Georgia,"Times New Roman",serif;font-size:1.7rem;line-height:1.03;margin:.45em 0 .2em;letter-spacing:-.02em}
+    .meta{margin:0;color:var(--muted)}
+    .card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+
+    .footer{padding:20px 0 36px;color:var(--muted);font-size:.95rem}
+
     @media (max-width:980px){
-      body{font-size:17px}
-      .hero-grid{grid-template-columns:1fr}
-      .layout{grid-template-columns:1fr;gap:14px}
-      .quick-tools{top:0}
-      .toc-shell{position:sticky;top:0}
-      .toc{border-radius:0;border-left:0;border-right:0;padding:8px 10px;overflow-x:auto}
-      .toc h2{display:none}
-      .toc nav{display:flex;gap:8px}
-      .toc a{display:inline-flex;white-space:nowrap;padding:8px 12px;background:#fff}
-      .week-tools{display:grid;grid-template-columns:1fr;gap:8px}
-      .complete-pill,.print-week{width:100%;justify-content:center}
-      .hero{padding-top:30px}
+      .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .roadmap-bar{grid-template-columns:repeat(2,minmax(0,1fr))}
     }
-    @media print{
-      body{background:#fff;font-size:12pt}
-      .hero,.toc-shell,.footer,.section-nav,.week-tools{display:none !important}
-      .card{box-shadow:none;border-color:#d7d7d7;padding:14pt}
-      .section{padding:0;border:0}
-      body.print-week-1 .section,body.print-week-2 .section,body.print-week-3 .section,body.print-week-4 .section{display:none}
-      body.print-week-1 #week-1,body.print-week-2 #week-2,body.print-week-3 #week-3,body.print-week-4 #week-4{display:block}
-      body.print-week-1 #week-1 .card,body.print-week-2 #week-2 .card,body.print-week-3 #week-3 .card,body.print-week-4 #week-4 .card{break-inside:avoid}
-      .scripture-details{border:1px solid #ddd}
-      .scripture-details[open] summary{padding-bottom:0}
+    @media (max-width:640px){
+      .grid{grid-template-columns:1fr}
+      .hero{padding-top:28px}
+      .roadmap-bar{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
-  <header class="hero wrap" id="top">
-    <div class="hero-grid">
-      <div>
-        <div class="eyebrow">Engaging</div>
-        <h1>Identity</h1>
-        <p class="subtitle">A four-week practice series for discovering your identity and calling in the way of Jesus.</p>
-        <div class="cta-row">
-          <a class="button primary" href="#week-1">Start Week One</a>
-          <a class="button" href="#how-to-use">How to Use This Guide</a>
-          <a class="button" href="serving.html">Serving Series</a>
-          <a class="button" href="catalog.html">Practice Series Catalog</a>
-        </div>
-      </div>
-      <figure class="cover-frame" id="cover-frame">
-        <img class="cover" id="cover-image" src="booklet-cover.jpg" alt="Engaging Identity booklet cover">
-      </figure>
+  <header class="hero wrap">
+    <div class="eyebrow">Spiritual Formation Roadmap</div>
+    <h1>Practice Series Catalog</h1>
+    <p class="sub">A growing library of practice guides designed to help our church apprentice in the way of Jesus together, one series at a time.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="identity.html">Open Engaging Identity</a>
+      <a class="btn" href="serving.html">Open Serving</a>
+      <a class="btn" href="https://www.yorkalliance.org/sermons">Sermons</a>
+      <a class="btn" href="https://www.yorkalliance.org/groups">Community Groups</a>
     </div>
   </header>
 
-  <div class="layout wrap">
-    <div class="quick-tools" aria-label="Jump and print tools">
-      <label for="quick-jump-select">Jump to</label>
-      <select id="quick-jump-select">
-        <option value="#intro">Introduction</option>
-        <option value="#how-to-use">How to Use</option>
-        <option value="#week-1">Week 1</option>
-        <option value="#week-2">Week 2</option>
-        <option value="#week-3">Week 3</option>
-        <option value="#week-4">Week 4</option>
-      </select>
-      <button type="button" id="quick-jump-go">Go</button>
-      <label for="quick-print-select">Print</label>
-      <select id="quick-print-select">
-        <option value="week-1">Week 1</option>
-        <option value="week-2">Week 2</option>
-        <option value="week-3">Week 3</option>
-        <option value="week-4">Week 4</option>
-      </select>
-      <button type="button" id="quick-print-go">Print Week</button>
-      <p class="reader-fallback">Open Printable Pages: <a href="printables/identity-week-1-print.html">Week 1</a><a href="printables/identity-week-2-print.html">Week 2</a><a href="printables/identity-week-3-print.html">Week 3</a><a href="printables/identity-week-4-print.html">Week 4</a></p>
+  <section class="roadmap wrap" aria-label="Formation roadmap stages">
+    <div class="roadmap-bar">
+      <div class="step active">Current: Identity and Calling</div>
+      <div class="step active">Current: Serving</div>
+      <div class="step">Future Series: Coming Soon</div>
+      <div class="step">Archive: Growing Catalog</div>
     </div>
+  </section>
 
-    <aside class="toc-shell">
-      <div class="toc" aria-label="Table of contents">
-        <h2>On This Page</h2>
-        <nav>
-          <a href="#intro">Introduction</a>
-          <a href="#how-to-use">How to Use</a>
-          <a href="#week-1">Week 1</a>
-          <a href="#week-2">Week 2</a>
-          <a href="#week-3">Week 3</a>
-          <a href="#week-4">Week 4</a>
-        </nav>
-      </div>
-    </aside>
+  <main class="wrap">
+    <section class="grid" aria-label="Practice series cards">
+      <article class="card">
+        <div class="card-media">
+          <img src="booklet-cover.jpg" alt="Engaging Identity booklet cover">
+        </div>
+        <div class="card-body">
+          <span class="pill">Current Series</span>
+          <h2>Engaging Identity</h2>
+          <p class="meta">4-week practice guide for identity and calling in the way of Jesus.</p>
+          <div class="card-actions">
+            <a class="btn primary" href="identity.html">Open Guide</a>
+            <a class="btn" href="identity.html#week-1">Start Week 1</a>
+          </div>
+        </div>
+      </article>
 
-    <main>
-    <section class="section" id="intro"><div class="wrap card">
-      <h2>Introduction</h2>
-      <blockquote>"Christian spirituality involves a transformation of the self that occurs only when God and self are both deeply known. Both, therefore, have an important place in Christian spirituality. There is no deep knowing of God without a deep knowing of self, and no deep knowing of self without a deep knowing of God...<br><br>We come to know God best not by looking at God exclusively, but by looking at God and then looking at ourselves… Both God and self are mostly fully known in relationship to each other." <span class="quote-by">David Benner, <em>The Gift of Being Yourself</em></span></blockquote>
-      <p>The launch of a practice called "Discovering your Identity and Calling" is sure to elicit at least two polarized responses. For some there's a deep excitement and anticipation: You love digging into your personality profile, your gifts and abilities, and understanding more about yourself. For others, there's at the least an eye roll, if not a stronger reaction: You see the modern world as one that is obsessed with self to a fault already, and engaging such a practice within the church seems like the worst of modern, new age, self-help theology. Do you find yourself in one of those two camps?</p>
-      <p>First, let me burst the bubble of those who are excited to find out more about themselves as a unique snowflake. When we take an honest assessment, we do find out that we truly are unique snowflakes—as John Mark Comer says, "You sin in all sorts of special and unique ways." The internal journey, left alone, ends only in darkness. The goal of discovering our identity and calling, like every practice in the way of Jesus, is to bring glory to God. Spoiler alert: Whatever distinct aspects of identity you have, your calling is to bring glory to God and enjoy Him.</p>
-      <p>But secondly, let me gently push on those who see our modern obsession with self as a dead-end bunch of self-help nonsense. Consider these voices from the historical church:</p>
-      <blockquote>"How can you draw close to God when you are far from your own self? Grant, Lord, that I may know myself that I may know Thee." <span class="quote-by">St. Augustine</span></blockquote>
-      <blockquote>"No one can know God who does not first know himself." <span class="quote-by">Meister Eckhard</span></blockquote>
-      <blockquote>"Almost all problems in the spiritual life stem from the lack of self-knowledge." <span class="quote-by">Teresa of Avila</span></blockquote>
-      <blockquote>"Our wisdom consists almost entirely of two parts: the knowledge of God and of ourselves. Though these are connected to each other by many ties, it is not easy to see which of the two proceeds and gives birth to the other." <span class="quote-by">John Calvin</span></blockquote>
-      <p>I would argue, and I believe the historical church would agree, that knowing who we have been created to be is a key part of us learning to live lives that bring glory to God in all we do. And that's the goal of this practice series.</p>
-      <p>I believe Jesus needed to take a journey in order to understand His unique identity and calling. And I believe that we must do the same.</p>
-      <p><strong>Welcome to the journey.</strong></p>
-      <div class="section-nav"><a class="button" href="#how-to-use">Next Section</a></div>
-    </div></section>
+      <article class="card">
+        <div class="card-media"><img src="serving-Booklet.jpg" alt="Serving booklet cover"></div>
+        <div class="card-body">
+          <span class="pill">Current Series</span>
+          <h2>Serving</h2>
+          <p class="meta">4-week practice guide for serving as a path to greatness and maturity in Christ.</p>
+          <div class="card-actions">
+            <a class="btn primary" href="serving.html">Open Guide</a>
+            <a class="btn" href="serving.html#week-1">Start Week 1</a>
+          </div>
+        </div>
+      </article>
 
-    <section class="section" id="how-to-use"><div class="wrap card">
-      <h2>How to Use This Guide</h2>
-      <p>The specific exercises in this guide stretch over four weeks and are based loosely on the teachings from Sunday morning. You can find the teachings at <a href="https://www.yorkalliance.org/sermons">yorkalliance.org/sermons</a>.</p>
-      <p>The way that we believe God changes us is through the intersection of Biblical teaching, community, and practice. If you don't currently have a connection to a Community Group or another committed group of believers with whom to engage this material, you are strongly encouraged to get connected to one. You can get more information and sign up at <a href="https://www.yorkalliance.org/groups">yorkalliance.org/groups</a>.</p>
-      <p>As with many of our practices, this practice relies heavily on the teachings and writings of Practicing the Way. Additional recommended resources include <em>The Gift of Being Yourself</em> by David Benner, <em>Living Fearless</em> by Jamie Winship, <em>Let Your Life Speak</em> by Parker Palmer, and <em>The Relational Soul</em> by Richard Plass and James Cofield.</p>
-      <div class="section-nav"><a class="button primary" href="#week-1">Next Week</a></div>
-    </div></section>
-
-    <section class="section" id="week-1"><div class="wrap card">
-      <div class="week-tools">
-        <label class="complete-pill"><input class="week-complete" type="checkbox" data-week="week-1"> Mark Week 1 as Completed</label>
-        <button class="print-week" type="button" data-print-week="week-1">Print Week 1</button>
-      </div>
-      <h2>Week One: The Journey</h2>
-      <blockquote>"There is only one problem on which all my existence, my peace, and my happiness depend; to discover myself in discovering God. If I find Him I will find myself and if I find my true self I will find Him." <span class="quote-by">Thomas Merton</span></blockquote>
-      <p>One of the keys to our discipleship in the way of Jesus is discovering and engaging our identity and calling. However, for many of us, the identity that Jesus has given us and how we should live in light of that doesn't largely play into our apprenticeship to Jesus. Instead, we often spend years finding out who our families say that we are, who our friends and co-worker say that we are, or even who the culture as a whole says that we should be. In the end, we end up failing at being someone we're not rather than succeeding as the person God created us to be.</p>
-      <p>Discovering and engaging our identity and calling is a process, not a one-time event. That was true for Jesus, and it will be true for us as well. No matter where you are in the journey with Him, it's not too late to start the journey!</p>
-      <h3>Discuss in Community</h3><p>Have somebody read <a class="scripture-ref" data-reference="Matthew 3:13-4:17" href="#">Matthew 3:13-4:17</a>. Break into groups of 3-4 and discuss the following questions:</p>
-      <details class="scripture-details" data-reference="Matthew 3:13-4:17">
-        <summary>Expand Scripture Reflection: Matthew 3:13-4:17</summary>
-        <p class="scripture-preview">As Jesus is baptized, affirmed by the Father, and then tested in the wilderness, we see identity spoken before mission and obedience flowing from that identity.</p>
-        <a class="scripture-link" data-reference="Matthew 3:13-4:17" href="#">Open in Bible app</a>
-      </details>
-      <ul class="questions"><li>What do you see as the key points in Jesus' early journey into His identity?</li><li>What were some of the key points for you in the journey of understanding your own identity? Do you see parallels with Jesus' journey?</li><li>What role do you think the temptations played in Jesus' journey with identity?</li><li>Do you have any sense at this point in your journey of the specific identity that God has spoken over you?</li></ul>
-      <h3>Questions for Community</h3><ol class="questions"><li>What are some of your initial thoughts about stepping into this practice on engaging identity?</li><li>Look at the seven step process below that Bobby Clinton lays out for identifying and living into your identity. What stage do you think you're in? What's your greatest joy in this stage in your journey?</li><li>What's your greatest obstacle in this journey right now?</li></ol>
-      <div class="process" aria-label="Seven step process"><span>Sacred Foundations</span><span>Discovery</span><span>Stepping Out</span><span>Getting Good</span><span>Staying Faithful</span><span>Ending Well</span><span>Afterglow</span></div>
-      <p>Ask someone to write down obstacles and take time to pray for each other both during the group and throughout the week. Consider connecting with a consistent prayer partner/group throughout this series so that you can encourage one another in this practice.</p>
-      <h3>Individual Practice</h3><p>Set aside at least 30-60 minutes this week to reflect on your identity journey thus far.</p>
-      <ul><li>First, reflect on those areas in which you've had any kind of clarity regarding identity and calling: These could be deep desires as a child or young adult, words of affirmation from others, a clear sense of what you wanted to do, and even words/ideas which you sense to be from God.</li><li>Then, make a list of "big dreams" that you have for your life—a business you'd like to start, a problem you'd like to solve, an impact that you'd like to have on society, etc.</li><li>Finally, take some time quiet to listen to the voice of the Holy Spirit speaking to your heart. What do you sense He is saying about you? Ask Him what identity He has given you. Consider how what you hear from Him connects with the lists you've made above.</li></ul>
-      <div class="section-nav"><a class="button primary" href="#week-2">Next Week</a></div>
-    </div></section>
-
-    <section class="section" id="week-2"><div class="wrap card">
-      <div class="week-tools">
-        <label class="complete-pill"><input class="week-complete" type="checkbox" data-week="week-2"> Mark Week 2 as Completed</label>
-        <button class="print-week" type="button" data-print-week="week-2">Print Week 2</button>
-      </div>
-      <h2>Week Two: Being and Doing</h2>
-      <blockquote>"The Church's approach to an intelligent carpenter is usually confined to exhorting him not to be drunk and disorderly in his leisure hours, and to come to church on Sundays. What the Church should be telling him is this: that the very first demand that his religion makes upon him is that he should make good tables. Church by all means, and decent forms of amusement, certainly—but what use is all that if in the very center of his life and occupation he is insulting God with bad carpentry? No crooked table legs or ill-fitting drawers ever came out of the carpenter's shop at Nazareth. Nor, if they did, could anyone believe that they were made by the same hand that made Heaven and earth." <span class="quote-by">Dorothy Sayers, <em>Why Work?</em></span></blockquote>
-      <p>Western Christianity, traced back to its near Eastern roots in the 4th century, has either explicitly or more often implicitly taught and modeled a divide between the sacred and the secular. In simple terms, vocations that were explicitly "Christian" such as pastoral work, mission work, parachurch ministry, etc. were seen as both somehow holier and more worthwhile than other types of work. The unintended consequence of this reality has been that followers of Jesus see just a few hours each week as times that they can explicitly bring glory to Jesus. The biblical narrative, however, tells a very different story.</p>
-      <p>Paul reminds the Corinthian church that "Whether you eat or drink or whatever you do, do it all to the glory of God." (<a class="scripture-ref" data-reference="1 Corinthians 10:31" href="#">1 Corinthians 10:31</a>) According to <a class="scripture-ref" data-reference="Genesis 1-2" href="#">Genesis 1-2</a>, work was given to humans as a gift prior to sin entering the world, and by stepping into our identity and calling, we join God in His creative work in the world and thereby redeem work.</p>
-      <h3>Discuss in Community</h3><p>Have somebody read <a class="scripture-ref" data-reference="Genesis 1:26-28" href="#">Genesis 1:26-28</a> and <a class="scripture-ref" data-reference="Genesis 2:15" href="#">Genesis 2:15</a>. Break into groups of 3-4 and discuss the following questions:</p>
-      <details class="scripture-details" data-reference="Genesis 1:26-28">
-        <summary>Expand Scripture Reflection: Genesis 1:26-28 and 2:15</summary>
-        <p class="scripture-preview">Human vocation is framed as stewardship: image-bearing people cultivate what God has made and participate in His good work.</p>
-        <a class="scripture-link" data-reference="Genesis 1:26-28" href="#">Open Genesis 1:26-28 in Bible app</a><br>
-        <a class="scripture-link" data-reference="Genesis 2:15" href="#">Open Genesis 2:15 in Bible app</a>
-      </details>
-      <ul class="questions"><li>Can you think of examples from your own life and work of "having dominion" over creation and "subduing" the earth?</li><li>How might excellence within your current vocation reflect the creativity of God and glorify Him?</li></ul>
-      <h3>Questions for Community</h3><ol class="questions"><li>Do you see your work as a gift from God? Why or why not? Do you see your work as a way to glorify God? Why or why not?</li><li>Have someone read <a class="scripture-ref" data-reference="Ephesians 2:10" href="#">Ephesians 2:10</a>. How might meditating on that verse each morning change the way you live during the day?</li><li>What's something you do that is really hard but also brings you a lot of joy?</li></ol>
-      <p>Take some time to pray for one another. Consider connecting with a consistent prayer partner/group throughout this series so that you can encourage one another in this practice.</p>
-      <h3>Individual Practice</h3><p><em>This practice is adapted from "Habit Audit" by Josh Porter.</em></p><p>This week you are invited to perform what is called a "habit audit" of your life rhythms and habits in order to better understand what you love and, thus, what is forming you. Keep a short and simple diary of your habits and patterns of life each day this week. You can keep a small notebook on your person for the week or use digital journal. Make note of the amount of time spent on each activity. Take particular note of the things to which you commit time, energy, and money.</p>
-      <p>Excerpts from such a diary may read something like:</p><ul><li>15 minutes making coffee</li><li>30 minutes on social media</li><li>1 hour working out</li><li>2 hours of TV shows</li><li>2 hours and $30 at a restaurant with friends</li><li>1 hour and $25 shopping online</li></ul>
-      <p>When the week and diary is complete, ask yourself a few questions.</p><ul><li>What rituals and habits are shaping me?</li><li>What has been shaping me without my knowing?</li><li>Are the things to which I dedicate my time leading me to Jesus?</li></ul>
-      <div class="section-nav"><a class="button primary" href="#week-3">Next Week</a></div>
-    </div></section>
-
-    <section class="section" id="week-3"><div class="wrap card">
-      <div class="week-tools">
-        <label class="complete-pill"><input class="week-complete" type="checkbox" data-week="week-3"> Mark Week 3 as Completed</label>
-        <button class="print-week" type="button" data-print-week="week-3">Print Week 3</button>
-      </div>
-      <h2>Week Three: Identity and Calling</h2>
-      <blockquote>"Our true identity must be received from God within community. (Receiving identity from God in community protects us from the counterfeit of radical individualism, which is self-generated, subjective, and produces internal and external conflict.) True identity can only be known by truth telling. Truth telling moves us from what is real to what is true. This is important because what is real to me isn't always true, but what is true is always real." <span class="quote-by">Jamie Winship, <em>Living Fearless</em></span></blockquote>
-      <p>Paul's letter to the Ephesian church is a brilliant statement about identity. The first three chapters contain exactly zero commands or directive statements; they are simply a description of the identity that we receive because we are children of God, "chose[n] before the foundation of the world." (<a class="scripture-ref" data-reference="Ephesians 1:4" href="#">Ephesians 1:4</a>) The fourth chapter, then, dives into the implications of our identity, with Paul urging the Ephesians to "walk in a manner worthy of the calling to which you have been called."</p>
-      <p>This means that for followers of Jesus, we are no longer defined by our past—those things that were done to us or by us—and we are instead people defined by our future reality which has become present in Christ. That new and true identity is most fully lived out within the context of community, where our true identity can be spoken in order to disarm and combat false narratives, lies, and shame. Through truth telling, we are able to speak the truth of identity over one another.</p>
-      <h3>Discuss in Community</h3><p>Have somebody read <a class="scripture-ref" data-reference="Ephesians 4:1-7" href="#">Ephesians 4:1-7</a>. Break into groups of 3-4 and discuss the following questions:</p>
-      <details class="scripture-details" data-reference="Ephesians 4:1-7">
-        <summary>Expand Scripture Reflection: Ephesians 4:1-7</summary>
-        <p class="scripture-preview">Identity in Christ creates a shared calling. The life that flows from that calling is marked by humility, patience, unity, and grace-shaped service.</p>
-        <a class="scripture-link" data-reference="Ephesians 4:1-7" href="#">Open in Bible app</a>
-      </details>
-      <ul class="questions"><li>What are some tangible ways that you live "worthy of your calling?" Are there ways that you've not chosen to live worthy of your calling?</li><li>What does it look like for a Christian community to choose unity over division?</li><li>What are some ways that you have specifically received grace from Jesus and have been invited to live into that grace?</li></ul>
-      <h3>Practice in Community</h3><p><em>This practice is adapted from Gavin Bennett, "Identity."</em> For this week's practice, we'll speak truth over each other in our community. This practice will involve two parts:</p>
-      <ul><li><strong>Listening Prayer:</strong> Spend some time asking the Holy Spirit to speak to you about this person's identity. Remember that God created our imaginations and has access to them, so oftentimes what the Holy Spirit wants to tell a person will come to us in the form of an image, a word or phrase, a song, a passage of Scripture, or a feeling.</li><li><strong>Blessing:</strong> In your experience with this person, you've likely seen or noticed something significantly good about them—their character, their passion, their person. Spend some time calling those things to mind and then speaking it out loud to them. And be specific.</li></ul>
-      <p>You have two options: either do this as a community, in which case it might take you a few weeks to listen for and bless each person, or break into triads again and do it all in one night. Either way is great. Follow a model something like this:</p>
-      <ol><li>Designate a timekeeper/facilitator for the group. Put away your phones, or any other distractions, and get comfortable.</li><li>Pick someone to go first. Have someone invite the Spirit to speak to you all about him/her. Simply ask God: "How do you see ________?" or "What do you want to say about ________'s identity?" and then listen to see what he says.</li><li>After a minute or two of listening, spend 5-10 minutes sharing what you heard the Spirit say over him/her and blessing them.</li><li>Have someone pray and thank Jesus for this person.</li></ol>
-      <h3>Individual Practice</h3><p>Take time this week to practice individual listening prayer. Find a quiet place free from distractions and ask God about your identity. Are there ways that you are living outside of who He has created you to be? What is He inviting you into? What does He say about you?</p><p>Then, read through a list of "Who I Am in Christ" statements from the Scriptures, and compare them to what you've heard. A good list can be found at cccgo.com or just search "Who I Am in Christ."</p>
-      <div class="section-nav"><a class="button primary" href="#week-4">Next Week</a></div>
-    </div></section>
-
-    <section class="section" id="week-4"><div class="wrap card">
-      <div class="week-tools">
-        <label class="complete-pill"><input class="week-complete" type="checkbox" data-week="week-4"> Mark Week 4 as Completed</label>
-        <button class="print-week" type="button" data-print-week="week-4">Print Week 4</button>
-      </div>
-      <h2>Week Four: Habits</h2>
-      <blockquote>"How we spend our days is, of course, how we spend our lives. What we do with this hour, and that one, is what we are doing. A schedule defends from chaos and whim. It is a net for catching days. It is a scaffolding on which a worker can stand and labor with both hands at sections of time. A schedule is a mock-up of reason and order—willed, faked, and so brought into being; it is a peace and a haven set into the wreck of time; it is a lifeboat on which you find yourself, decades later, still living." <span class="quote-by">Annie Dillard, <em>The Writing Life</em></span></blockquote>
-      <p>God has created each one of us uniquely. We all follow different paths—some slightly different, some quite divergent from one another. But for those are in Christ, the end goal is the same. The Westminster Shorter Catechism describes our ultimate earthly calling this way: "Man's chief end is to glorify God, and to enjoy Him forever." This is what Jesus would call "abundant life" or "life to the full," and it's what we might call "the good life."</p>
-      <p>And while the good life is a common goal, and it's very possible for all of us, it's not inevitable. The culture around us is constantly seeking to mold us into its image, so the follower of Jesus must be intentional about transformation into the image of Christ. The invitation of Jesus is that we would follow Him and thus be like Him (<a class="scripture-ref" data-reference="Luke 6:40" href="#">Luke 6:40</a>). In Paul's words we are to "stay in step with the Spirit" (<a class="scripture-ref" data-reference="Galatians 5:25" href="#">Galatians 5:25</a>) or "put off the old self" and "put on the new self." (<a class="scripture-ref" data-reference="Ephesians 4:22-24" href="#">Ephesians 4:22-24</a>) While the Holy Spirit is the one who does the work of transformation, it requires intentionality on our part.</p>
-      <h3>Discuss in Community</h3><p>Have somebody read <a class="scripture-ref" data-reference="Ephesians 4:17-32" href="#">Ephesians 4:17-32</a>. Break into groups of 3-4 and discuss the following questions:</p>
-      <details class="scripture-details" data-reference="Ephesians 4:17-32">
-        <summary>Expand Scripture Reflection: Ephesians 4:17-32</summary>
-        <p class="scripture-preview">The old self is not defeated by willpower alone. Paul describes a Spirit-formed pattern: put off, be renewed, put on, and practice truth in community.</p>
-        <a class="scripture-link" data-reference="Ephesians 4:17-32" href="#">Open in Bible app</a>
-      </details>
-      <ul class="questions"><li>What motivates you to put off your old self? Is that different than what should motivate you?</li><li>Can you point to areas in your life that are being "made new"?</li><li>What are some ways that you put effort, or can put effort, into your pursuit of Jesus?</li></ul>
-      <h3>Questions for Community</h3><ol class="questions"><li>What habits/practices have been most helpful in your transformation? Which do you enjoy most? Least?</li><li>As you consider the practice for this week, does anyone know of a habit that they need to either cut out or add in?</li><li>Has this practice been helpful to you? What areas have been exposed in this practice that you need to continue to process?</li></ol>
-      <p>Take some time to pray for one another. Consider connecting with a consistent prayer partner/group throughout this series so that you can encourage one another in this practice.</p>
-      <h3>Individual Practice</h3><p>Go back to the list of habits that you journaled during Week Two's practice. If you didn't do that practice, you will need to take the next week to do that practice first prior to engaging this one.</p>
-      <p>As you review the list, choose 1-3 habits that are unhealthy, or seemingly neutral, for your spiritual growth. Then, think about some of the practices of Jesus that you either don't currently engage or that you don't engage to the level you would like. Pastor AJ Sherril talks about "upstream" and "downstream" practices, which simply means that some practices are easier for us based on our personality (downstream), and others are more difficult (upstream).</p>
-      <p>Commit to removing these 1-3 habits over the next month and replacing them with practices from the way of Jesus. Make sure that you aren't attempting more than 1 upstream practice. For instance, if you have a habit of watching a show on Netflix or a sports event, consider replacing it with a time of prayer or a meal with someone in your community. Be specific and gauge your willingness to follow-through on your commitment. Once you've determined which habits you are going to swap out for the next months, communicate your commitment to someone in your community and ask them to follow-up with you.</p>
-      <div class="section-nav"><a class="button" href="#top">Back to Top</a></div>
-    </div></section>
-    </main>
-  </div>
+      <article class="card">
+        <div class="card-media"><div class="placeholder">Cover Placeholder</div></div>
+        <div class="card-body">
+          <span class="pill">In Development</span>
+          <h2>Future Practice Series</h2>
+          <p class="meta">Use this pattern to keep adding your roadmap library.</p>
+          <div class="card-actions">
+            <a class="btn" href="#" aria-disabled="true">Coming Soon</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
 
   <footer class="footer wrap">
-    <p>Engaging Identity &mdash; A Practice Series &bull; <a href="https://www.yorkalliance.org">yorkalliance.org</a> &bull; <a href="serving.html">Open Serving Series</a> &bull; <a href="catalog.html">View Practice Series Catalog</a></p>
+    <p>York Alliance Practice Series Catalog</p>
   </footer>
-
-  <script>
-    const BOOK_DATA = [
-      { code: "GEN", canonical: "Genesis", aliases: ["gen", "ge", "gn"] },
-      { code: "EXO", canonical: "Exodus", aliases: ["exo", "ex"] },
-      { code: "LEV", canonical: "Leviticus", aliases: ["lev", "lv", "levit"] },
-      { code: "NUM", canonical: "Numbers", aliases: ["num", "nums", "nm"] },
-      { code: "DEU", canonical: "Deuteronomy", aliases: ["deut", "deu", "dt"] },
-      { code: "JOS", canonical: "Joshua", aliases: ["jos", "josh", "jsh"] },
-      { code: "JDG", canonical: "Judges", aliases: ["jdg", "judg", "jud"] },
-      { code: "RUT", canonical: "Ruth", aliases: ["rut"] },
-      { code: "1SA", canonical: "1 Samuel", aliases: ["1 samuel", "1 sam", "1sa", "i samuel", "first samuel"] },
-      { code: "2SA", canonical: "2 Samuel", aliases: ["2 samuel", "2 sam", "2sa", "ii samuel", "second samuel"] },
-      { code: "1KI", canonical: "1 Kings", aliases: ["1 kings", "1 ki", "1k", "i kings", "first kings"] },
-      { code: "2KI", canonical: "2 Kings", aliases: ["2 kings", "2 ki", "2k", "ii kings", "second kings"] },
-      { code: "1CH", canonical: "1 Chronicles", aliases: ["1 chronicles", "1 chron", "1ch", "i chronicles", "first chronicles"] },
-      { code: "2CH", canonical: "2 Chronicles", aliases: ["2 chronicles", "2 chron", "2ch", "ii chronicles", "second chronicles"] },
-      { code: "EZR", canonical: "Ezra", aliases: ["ezr"] },
-      { code: "NEH", canonical: "Nehemiah", aliases: ["neh", "ne"] },
-      { code: "EST", canonical: "Esther", aliases: ["est", "es"] },
-      { code: "JOB", canonical: "Job", aliases: ["jb"] },
-      { code: "PSA", canonical: "Psalms", aliases: ["psalm", "psalms", "ps", "psa", "pslm"] },
-      { code: "PRO", canonical: "Proverbs", aliases: ["prov", "pro", "prv"] },
-      { code: "ECC", canonical: "Ecclesiastes", aliases: ["eccles", "eccl", "ecc"] },
-      { code: "SNG", canonical: "Song of Solomon", aliases: ["song", "song of songs", "song of solomon", "sos", "canticles", "song of sol"] },
-      { code: "ISA", canonical: "Isaiah", aliases: ["isa", "is"] },
-      { code: "JER", canonical: "Jeremiah", aliases: ["jer", "je"] },
-      { code: "LAM", canonical: "Lamentations", aliases: ["lam", "lament"] },
-      { code: "EZK", canonical: "Ezekiel", aliases: ["ezek", "ezk", "ez"] },
-      { code: "DAN", canonical: "Daniel", aliases: ["dan", "dn"] },
-      { code: "HOS", canonical: "Hosea", aliases: ["hos", "ho"] },
-      { code: "JOL", canonical: "Joel", aliases: ["joel", "jol", "jl"] },
-      { code: "AMO", canonical: "Amos", aliases: ["amos", "amo", "am"] },
-      { code: "OBA", canonical: "Obadiah", aliases: ["obadiah", "obad", "oba", "ob"] },
-      { code: "JON", canonical: "Jonah", aliases: ["jonah", "jon", "jh"] },
-      { code: "MIC", canonical: "Micah", aliases: ["micah", "mic", "mc"] },
-      { code: "NAM", canonical: "Nahum", aliases: ["nahum", "nah", "nam"] },
-      { code: "HAB", canonical: "Habakkuk", aliases: ["habakkuk", "hab", "hb"] },
-      { code: "ZEP", canonical: "Zephaniah", aliases: ["zeph", "zep", "zf"] },
-      { code: "HAG", canonical: "Haggai", aliases: ["haggai", "hag", "hg"] },
-      { code: "ZEC", canonical: "Zechariah", aliases: ["zech", "zec", "zch"] },
-      { code: "MAL", canonical: "Malachi", aliases: ["mal", "ml", "malachi"] },
-      { code: "MAT", canonical: "Matthew", aliases: ["matt", "mat", "mt"] },
-      { code: "MRK", canonical: "Mark", aliases: ["mark", "mrk", "mk"] },
-      { code: "LUK", canonical: "Luke", aliases: ["luke", "luk", "lk", "lu"] },
-      { code: "JHN", canonical: "John", aliases: ["john", "jn", "jhn", "joh"] },
-      { code: "ACT", canonical: "Acts", aliases: ["acts", "act", "ac"] },
-      { code: "ROM", canonical: "Romans", aliases: ["rom", "rm"] },
-      { code: "1CO", canonical: "1 Corinthians", aliases: ["1 corinthians", "1 cor", "1co", "i cor", "first corinthians"] },
-      { code: "2CO", canonical: "2 Corinthians", aliases: ["2 corinthians", "2 cor", "2co", "ii cor", "second corinthians"] },
-      { code: "GAL", canonical: "Galatians", aliases: ["gal", "ga"] },
-      { code: "EPH", canonical: "Ephesians", aliases: ["eph", "ep"] },
-      { code: "PHP", canonical: "Philippians", aliases: ["phil", "php", "pp"] },
-      { code: "COL", canonical: "Colossians", aliases: ["col", "co"] },
-      { code: "1TH", canonical: "1 Thessalonians", aliases: ["1 thessalonians", "1 thess", "1th", "i thess", "first thessalonians"] },
-      { code: "2TH", canonical: "2 Thessalonians", aliases: ["2 thessalonians", "2 thess", "2th", "ii thess", "second thessalonians"] },
-      { code: "1TI", canonical: "1 Timothy", aliases: ["1 timothy", "1 tim", "1ti", "i tim", "first timothy"] },
-      { code: "2TI", canonical: "2 Timothy", aliases: ["2 timothy", "2 tim", "2ti", "ii tim", "second timothy"] },
-      { code: "TIT", canonical: "Titus", aliases: ["tit", "ti"] },
-      { code: "PHM", canonical: "Philemon", aliases: ["philem", "phile", "phm", "phlm"] },
-      { code: "HEB", canonical: "Hebrews", aliases: ["heb", "he"] },
-      { code: "JAS", canonical: "James", aliases: ["jam", "jas", "jm"] },
-      { code: "1PE", canonical: "1 Peter", aliases: ["1 peter", "1 pet", "1pe", "i peter", "first peter"] },
-      { code: "2PE", canonical: "2 Peter", aliases: ["2 peter", "2 pet", "2pe", "ii peter", "second peter"] },
-      { code: "1JN", canonical: "1 John", aliases: ["1 john", "1 jn", "1jn", "i john", "first john"] },
-      { code: "2JN", canonical: "2 John", aliases: ["2 john", "2 jn", "2jn", "ii john", "second john"] },
-      { code: "3JN", canonical: "3 John", aliases: ["3 john", "3 jn", "3jn", "iii john", "third john"] },
-      { code: "JUD", canonical: "Jude", aliases: ["jude", "jud", "jd"] },
-      { code: "REV", canonical: "Revelation", aliases: ["rev", "revelations", "rv"] }
-    ];
-
-    const BOOK_LOOKUP = new Map();
-    const BOOK_INDEX = new Map();
-    const TRANS = { id: "59", code: "ESV" };
-    const PROGRESS_KEY = "engaging-identity-week-progress";
-
-    BOOK_DATA.forEach((book, idx) => {
-      BOOK_INDEX.set(book.code, idx);
-      const uniqueNames = new Set([book.canonical, book.code, ...book.aliases]);
-      uniqueNames.forEach((name) => {
-        const key = cleanBookKey(name);
-        if (key) BOOK_LOOKUP.set(key, book);
-      });
-    });
-
-    setupCoverFallback();
-    setupScriptureLinks();
-    setupProgressTracking();
-    setupPrintButtons();
-    setupMobileJump();
-
-    function setupCoverFallback() {
-      const img = document.getElementById("cover-image");
-      const frame = document.getElementById("cover-frame");
-      if (!img || !frame) return;
-      img.addEventListener("error", () => frame.classList.add("no-image"));
-    }
-
-    function setupScriptureLinks() {
-      document.querySelectorAll("[data-reference]").forEach((el) => {
-        const ref = el.getAttribute("data-reference");
-        if (!ref) return;
-        try {
-          const range = parseReference(ref);
-          const url = buildBibleUrl(range, TRANS);
-          if (el.tagName.toLowerCase() === "a") {
-            el.setAttribute("href", url);
-            el.setAttribute("target", "_blank");
-            el.setAttribute("rel", "noopener");
-          }
-        } catch (_error) {
-          if (el.tagName.toLowerCase() === "a") {
-            el.setAttribute("href", "https://www.bible.com/");
-            el.setAttribute("target", "_blank");
-            el.setAttribute("rel", "noopener");
-          }
-        }
-      });
-    }
-
-    function setupProgressTracking() {
-      const state = readProgress();
-      document.querySelectorAll(".week-complete").forEach((checkbox) => {
-        const week = checkbox.getAttribute("data-week");
-        if (!week) return;
-        checkbox.checked = Boolean(state[week]);
-        applyWeekStyle(week, checkbox.checked);
-        checkbox.addEventListener("change", () => {
-          const next = readProgress();
-          next[week] = checkbox.checked;
-          localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
-          applyWeekStyle(week, checkbox.checked);
-        });
-      });
-    }
-
-    function setupPrintButtons() {
-      document.querySelectorAll("[data-print-week]").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const week = btn.getAttribute("data-print-week");
-          if (!week) return;
-          document.body.classList.add(`print-${week}`);
-          window.print();
-          document.body.classList.remove(`print-${week}`);
-        });
-      });
-    }
-
-    function setupMobileJump() {
-      const select = document.getElementById("quick-jump-select");
-      const go = document.getElementById("quick-jump-go");
-      const printSelect = document.getElementById("quick-print-select");
-      const printGo = document.getElementById("quick-print-go");
-      if (!select || !go || !printSelect || !printGo) return;
-
-      const navigate = () => {
-        const target = select.value;
-        if (!target) return;
-        const el = document.querySelector(target);
-        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-      };
-
-      go.addEventListener("click", navigate);
-      select.addEventListener("change", navigate);
-
-      printGo.addEventListener("click", () => {
-        const week = printSelect.value;
-        if (!week) return;
-        document.body.classList.add(`print-${week}`);
-        window.print();
-        document.body.classList.remove(`print-${week}`);
-      });
-    }
-
-    function readProgress() {
-      try {
-        return JSON.parse(localStorage.getItem(PROGRESS_KEY) || "{}");
-      } catch (_error) {
-        return {};
-      }
-    }
-
-    function applyWeekStyle(week, isComplete) {
-      const section = document.getElementById(week);
-      if (!section) return;
-      section.classList.toggle("is-complete", Boolean(isComplete));
-    }
-
-    function parseReference(rawInput) {
-      const prepared = prepareReference(rawInput);
-      const parts = splitRange(prepared);
-      const start = parseSegmentWithBook(parts.start);
-      let end = null;
-      if (parts.end) {
-        end = parseEndingSegment(parts.end, start);
-        ensureRangeOrder(start, end);
-      }
-      return { start, end };
-    }
-
-    function prepareReference(input) {
-      return input
-        .replace(/[\u2013\u2014]/g, "-")
-        .replace(/[;,]/g, " ")
-        .replace(/v(?=\d)/gi, ":")
-        .replace(/([A-Za-z])(\d)/g, "$1 $2")
-        .replace(/^(\s*[1-3])(?!\s)(?=[A-Za-z])/i, (m) => `${m.trim()} `)
-        .replace(/\s+/g, " ")
-        .trim();
-    }
-
-    function splitRange(reference) {
-      let dashIndex = -1;
-      for (let i = 0; i < reference.length; i += 1) {
-        if (reference[i] === "-" && hasDigitBefore(reference, i - 1)) {
-          dashIndex = i;
-          break;
-        }
-      }
-      if (dashIndex === -1) return { start: reference.trim(), end: null };
-      return { start: reference.slice(0, dashIndex).trim(), end: reference.slice(dashIndex + 1).trim() };
-    }
-
-    function hasDigitBefore(text, index) {
-      for (let i = index; i >= 0; i -= 1) {
-        const char = text[i];
-        if (char === " ") continue;
-        return /\d/.test(char);
-      }
-      return false;
-    }
-
-    function parseSegmentWithBook(part) {
-      const trimmed = (part || "").trim();
-      const match = trimmed.match(/^(.*?)(\d[\d:\s]*)$/);
-      if (!match) throw new Error("Could not parse reference");
-      const bookChunk = match[1].trim();
-      const numericChunk = match[2].trim();
-      if (!bookChunk) throw new Error("Book is required");
-      const book = resolveBook(bookChunk);
-      const pos = parseChapterVerse(numericChunk);
-      return { ...book, ...pos };
-    }
-
-    function parseEndingSegment(part, start) {
-      const trimmed = (part || "").trim();
-      if (!trimmed) throw new Error("End required");
-      if (/[A-Za-z]/.test(trimmed)) return parseSegmentWithBook(trimmed);
-      if (trimmed.includes(":")) {
-        const split = trimmed.split(":");
-        const chapter = parsePositiveNumber(split[0]);
-        const verse = split[1] ? parsePositiveNumber(split[1]) : null;
-        return { bookCode: start.bookCode, bookName: start.bookName, chapter, verse };
-      }
-      const value = parsePositiveNumber(trimmed);
-      if (start.verse != null) return { bookCode: start.bookCode, bookName: start.bookName, chapter: start.chapter, verse: value };
-      return { bookCode: start.bookCode, bookName: start.bookName, chapter: value, verse: null };
-    }
-
-    function parseChapterVerse(chunk) {
-      const split = chunk.trim().split(":");
-      const chapter = parsePositiveNumber(split[0]);
-      const verse = split[1] !== undefined && split[1] !== "" ? parsePositiveNumber(split[1]) : null;
-      return { chapter, verse };
-    }
-
-    function parsePositiveNumber(value) {
-      const n = Number(value);
-      if (!Number.isFinite(n) || n <= 0) throw new Error("Invalid number");
-      return n;
-    }
-
-    function resolveBook(raw) {
-      const key = cleanBookKey(raw);
-      const match = BOOK_LOOKUP.get(key);
-      if (!match) throw new Error(`Unknown book: ${raw}`);
-      return { bookCode: match.code, bookName: match.canonical };
-    }
-
-    function cleanBookKey(raw) {
-      if (!raw) return "";
-      const romanMap = { i: "1", ii: "2", iii: "3" };
-      let key = raw.toLowerCase().replace(/[\u2019']/g, "").replace(/\./g, " ").replace(/-/g, " ").replace(/,/g, " ").trim();
-      key = key.replace(/^the\s+/, "");
-      key = key.replace(/^(i{1,3})\b/, (m) => romanMap[m] || m);
-      key = key.replace(/\b(first|1st)\b/g, "1");
-      key = key.replace(/\b(second|2nd)\b/g, "2");
-      key = key.replace(/\b(third|3rd)\b/g, "3");
-      key = key.replace(/^([1-3])(?!\s)(?=[a-z])/, "$1 ");
-      key = key.replace(/([a-z])([1-3])/g, "$1 $2");
-      key = key.replace(/\s+/g, " ");
-      return key.trim();
-    }
-
-    function ensureRangeOrder(a, b) {
-      const bookDiff = BOOK_INDEX.get(a.bookCode) - BOOK_INDEX.get(b.bookCode);
-      if (bookDiff > 0) throw new Error("Range order is invalid");
-      if (bookDiff < 0) return;
-      if (a.chapter > b.chapter) throw new Error("Range order is invalid");
-      if (a.chapter === b.chapter && (a.verse || 0) > (b.verse || 0)) throw new Error("Range order is invalid");
-    }
-
-    function buildBibleUrl(range, translation) {
-      const startPart = buildSegment(range.start);
-      const endPart = range.end ? `-${buildSegment(range.end)}` : "";
-      return `https://www.bible.com/bible/${translation.id}/${startPart}${endPart}.${translation.code}`;
-    }
-
-    function buildSegment(segment) {
-      let part = `${segment.bookCode}.${segment.chapter}`;
-      if (segment.verse != null) part += `.${segment.verse}`;
-      return part;
-    }
-  </script>
 </body>
 </html>
-
 
