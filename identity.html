@@ -25,13 +25,15 @@
     .button{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);text-decoration:none;font-weight:700}
     .button.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
     .layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;align-items:start;padding-bottom:18px}
-    .quick-tools{position:sticky;top:8px;z-index:6;display:flex;flex-wrap:wrap;background:rgba(247,242,233,.96);border:1px solid var(--line);border-radius:12px;padding:10px;gap:8px;align-items:center}
+    .layout main{grid-column:2;min-width:0}
+    .layout main .wrap{width:100%;margin-inline:0}
+    .quick-tools{grid-column:1 / -1;position:sticky;top:8px;z-index:6;display:flex;flex-wrap:wrap;background:rgba(247,242,233,.96);border:1px solid var(--line);border-radius:12px;padding:10px;gap:8px;align-items:center}
     .quick-tools label{font-size:.86rem;font-weight:700;color:#5b5346}
     .quick-tools select{flex:1;min-width:180px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit}
     .quick-tools button{padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;font:inherit;font-weight:700}
     .reader-fallback{width:100%;font-size:.92rem;color:#5b5346}
     .reader-fallback a{margin-right:8px}
-    .toc-shell{position:sticky;top:14px;z-index:4}
+    .toc-shell{grid-column:1;position:sticky;top:14px;z-index:4}
     .toc{background:rgba(247,242,233,.94);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;padding:14px}
     .toc h2{font-size:1rem;font-family:ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:2px 0 10px}
     .toc a{display:block;text-decoration:none;color:var(--ink);font-size:.93rem;padding:7px 10px;border-radius:10px}
@@ -63,8 +65,12 @@
       body{font-size:17px}
       .hero-grid{grid-template-columns:1fr}
       .layout{grid-template-columns:1fr;gap:14px}
+      .layout main{grid-column:auto}
+      .quick-tools{grid-column:auto;display:flex;flex-direction:column;align-items:stretch}
+      .quick-tools select,.quick-tools button{width:100%;min-width:0}
+      .quick-tools .reader-fallback{width:100%}
       .quick-tools{top:0}
-      .toc-shell{position:sticky;top:0}
+      .toc-shell{grid-column:auto;position:sticky;top:0}
       .toc{border-radius:0;border-left:0;border-right:0;padding:8px 10px;overflow-x:auto}
       .toc h2{display:none}
       .toc nav{display:flex;gap:8px}
